@@ -1,9 +1,11 @@
 import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
+import { LoginMode } from '../interfaces/auth';
 
 interface UserPayload {
   id: string;
   email: string;
+  loginMode: LoginMode;
 }
 
 declare global {
