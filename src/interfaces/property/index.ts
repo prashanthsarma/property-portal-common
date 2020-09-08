@@ -30,6 +30,7 @@ export enum Facility {
   ServiceLift = "Service Lift"
 }
 
+
 export interface IPropertyAttrs {
   header: string;
   propertyType: PropertyType;
@@ -43,6 +44,7 @@ export interface IPropertyAttrs {
   lat: number;
   lon: number;
   userId: string;
+  images : string[];
 }
 
 export interface IListingRequestBody extends IPropertyAttrs {
